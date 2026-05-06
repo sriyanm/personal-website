@@ -124,7 +124,7 @@ export default function Skills() {
 
   return (
     <section id="skills" className="section-padding bg-[#000e1f]">
-      <div className="stripe-divider mb-16" />
+      <div className="stripe-divider mb-16"><span /></div>
       <div className="max-w-6xl mx-auto">
         {/* Section header */}
         <div

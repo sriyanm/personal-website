@@ -49,11 +49,32 @@ body {
   color: #FFCB05;
 }
 
-/* Racing stripe divider utility */
+/* Racing stripe divider — three parallel bars like a livery accent */
 .stripe-divider {
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #FFCB05 20%, #FFCB05 80%, transparent);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 72px;
+}
+.stripe-divider::before,
+.stripe-divider::after,
+.stripe-divider span {
+  display: block;
+  background-color: #FFCB05;
+  border-radius: 1px;
+}
+.stripe-divider::before {
+  content: '';
+  height: 6px;
+}
+.stripe-divider::after {
+  content: '';
+  height: 3px;
   opacity: 0.6;
+}
+.stripe-divider span {
+  height: 2px;
+  opacity: 0.3;
 }
 
 /* Gradient text utility */

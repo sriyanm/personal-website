@@ -73,8 +73,7 @@ export default function Footer() {
             Let&apos;s Connect
           </h2>
           <p className="text-slate-400 max-w-lg mx-auto mb-10 leading-relaxed">
-            Whether it&apos;s about a role, a project, debating F1 strategy, or predicting the right
-            country in GeoGuessr — my inbox is open.
+            My inbox is open.
           </p>
 
           {/* Primary CTA */}

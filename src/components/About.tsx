@@ -54,7 +54,7 @@ export default function About() {
   return (
     <section id="about" className="bg-[#00274C]/30 section-padding relative">
       {/* Top racing stripe */}
-      <div className="stripe-divider mb-16" />
+      <div className="stripe-divider mb-16"><span /></div>
 
       <div className="max-w-6xl mx-auto" ref={ref}>
         {/* Section header */}
@@ -91,13 +91,12 @@ export default function About() {
             <p className="text-slate-300 leading-relaxed mb-5">
               I&apos;m a computer science student at the University of Michigan College of Engineering,
               expected to graduate in December 2026. I care deeply about building systems that are
-              reliable, fast, and built to scale — from distributed workflow engines to full-stack
+              reliable, fast, and built to scale, from distributed workflow engines to full stack
               product experiences.
             </p>
             <p className="text-slate-300 leading-relaxed mb-8">
-              Outside of engineering, you&apos;ll find me obsessing over F1 strategy, hunting for constellations,
-              or getting humbled on GeoGuessr. I believe the same curiosity that drives these interests
-              makes me a better engineer.
+              Outside of engineering, you&apos;ll find me watching Formula 1, stargazing,
+              or playing GeoGuessr.
             </p>
 
             {/* Relevant courses */}

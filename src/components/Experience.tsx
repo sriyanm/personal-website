@@ -121,7 +121,7 @@ export default function Experience() {
 
   return (
     <section id="experience" className="section-padding bg-[#000e1f]">
-      <div className="stripe-divider mb-16" />
+      <div className="stripe-divider mb-16"><span /></div>
       <div className="max-w-4xl mx-auto">
         {/* Section header */}
         <div
@@ -132,12 +132,6 @@ export default function Experience() {
             02 / Experience
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-white">Where I&apos;ve Worked</h2>
-          <p className="text-slate-400 text-sm mt-2">
-            Add new entries to{" "}
-            <code className="font-mono text-[#FFCB05]/70 text-xs bg-slate-800/60 px-1.5 py-0.5 rounded">
-              src/data/experience.ts
-            </code>
-          </p>
         </div>
 
         {/* Timeline */}

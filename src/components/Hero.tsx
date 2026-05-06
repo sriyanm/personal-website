@@ -146,7 +146,11 @@ export default function Hero() {
       />
 
       {/* Racing stripe top accent */}
-      <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#FFCB05] to-transparent opacity-70" />
+      <div className="absolute top-0 left-0 flex flex-col gap-[4px] pt-0">
+        <div className="h-[6px] w-24 bg-[#FFCB05]" />
+        <div className="h-[3px] w-24 bg-[#FFCB05] opacity-60" />
+        <div className="h-[2px] w-24 bg-[#FFCB05] opacity-30" />
+      </div>
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         {/* Overline label */}
@@ -202,28 +206,6 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 opacity-0 animate-[fadeIn_1s_ease_2s_forwards]">
-          <button
-            onClick={() =>
-              document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" })
-            }
-            className="flex flex-col items-center gap-2 text-slate-500 hover:text-[#FFCB05] transition-colors"
-            aria-label="Scroll down"
-          >
-            <span className="font-mono text-xs tracking-widest">SCROLL</span>
-            <svg
-              width="20"
-              height="20"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              className="animate-bounce"
-            >
-              <path d="M10 4v12M4 10l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </button>
-        </div>
       </div>
     </section>
   );

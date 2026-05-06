@@ -140,7 +140,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="section-padding bg-[#00274C]/20">
-      <div className="stripe-divider mb-16" />
+      <div className="stripe-divider mb-16"><span /></div>
       <div className="max-w-6xl mx-auto">
         {/* Section header */}
         <div
@@ -151,12 +151,6 @@ export default function Projects() {
             03 / Projects
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-white">Things I&apos;ve Built</h2>
-          <p className="text-slate-400 text-sm mt-2">
-            Add new entries to{" "}
-            <code className="font-mono text-[#FFCB05]/70 text-xs bg-slate-800/60 px-1.5 py-0.5 rounded">
-              src/data/projects.ts
-            </code>
-          </p>
         </div>
 
         {/* Grid */}
