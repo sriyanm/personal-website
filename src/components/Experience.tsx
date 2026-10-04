@@ -24,6 +24,24 @@ function useInView(threshold = 0.1) {
   return { ref, inView };
 }
 
+function renderBullet(bullet: string) {
+  return bullet.split(/(\[[^\]]+\]\([^)]+\))/g).map((part, i) => {
+    const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (!match) return part;
+    return (
+      <a
+        key={i}
+        href={match[2]}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline underline-offset-2 hover:text-[#FFCB05] transition-colors"
+      >
+        {match[1]}
+      </a>
+    );
+  });
+}
+
 function ExperienceCard({
   entry,
   index,
@@ -79,11 +97,6 @@ function ExperienceCard({
                   entry.company
                 )}
               </h3>
-              {entry.incoming && (
-                <span className="text-xs font-mono bg-[#FFCB05]/15 text-[#FFCB05] border border-[#FFCB05]/30 px-2 py-0.5 rounded-full">
-                  Incoming
-                </span>
-              )}
             </div>
             <p className="text-[#FFCB05]/80 text-sm mt-0.5">{entry.role}</p>
           </div>
@@ -99,18 +112,14 @@ function ExperienceCard({
         <div className="h-px bg-gradient-to-r from-[#FFCB05]/30 to-transparent mb-4" />
 
         {/* Bullets */}
-        {entry.bullets.length > 0 ? (
-          <ul className="space-y-2.5">
-            {entry.bullets.map((bullet, i) => (
-              <li key={i} className="flex gap-3 text-sm text-slate-300 leading-relaxed">
-                <span className="mt-2 w-1 h-1 rounded-full bg-[#FFCB05] flex-shrink-0" />
-                {bullet}
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <p className="text-slate-500 text-sm italic">Starting May 2026</p>
-        )}
+        <ul className="space-y-2.5">
+          {entry.bullets.map((bullet, i) => (
+            <li key={i} className="flex gap-3 text-sm text-slate-300 leading-relaxed">
+              <span className="mt-2 w-1 h-1 rounded-full bg-[#FFCB05] flex-shrink-0" />
+              <span>{renderBullet(bullet)}</span>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

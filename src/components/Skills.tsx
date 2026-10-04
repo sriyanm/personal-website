@@ -38,6 +38,8 @@ const skillGroups = [
     icon: "🧠",
     skills: [
       "PyTorch",
+      "vLLM",
+      "SGLang",
       "TensorFlow",
       "PostgreSQL",
       "MySQL",

@@ -182,7 +182,7 @@ export default function Hero() {
         <div className="flex flex-wrap items-center justify-center gap-4 opacity-0 animate-[fadeIn_0.8s_ease_1.2s_forwards]">
           <button
             onClick={() =>
-              document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" })
+              document.querySelector("#experience")?.scrollIntoView({ behavior: "smooth" })
             }
             className="px-7 py-3 bg-[#FFCB05] text-[#00274C] font-bold text-sm rounded hover:bg-[#FFD740] transition-all duration-200 shadow-lg shadow-[#FFCB05]/20 hover:shadow-[#FFCB05]/40"
           >

@@ -5,18 +5,19 @@ export interface ExperienceEntry {
   dates: string;
   bullets: string[];
   link?: string;
-  incoming?: boolean;
 }
 
 export const experience: ExperienceEntry[] = [
   {
     company: "Databricks",
     location: "San Francisco, CA",
-    role: "Software Engineering Intern",
+    role: "Software Engineering Intern — Foundation Model Serving Team",
     dates: "May 2026 – Aug 2026",
-    bullets: [],
-    link: "https://databricks.com",
-    incoming: true,
+    bullets: [
+      "Productionized a [new GenAI model-serving offering](https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/reserved-provisioned-throughput) of provisioned throughput projected to generate $60M in revenue, giving large steady-state customers committed capacity w/ 99.99% availability, consistent latency, & predictable spend.",
+      "Owned the product end-to-end, building the UI, API handlers, & database schema, and drove cross-functional alignment across billing & field/sales teams to resolve pricing & rollout blockers, accelerating production launch by 2 weeks.",
+    ],
+    link: "https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/reserved-provisioned-throughput",
   },
   {
     company: "Samsara",

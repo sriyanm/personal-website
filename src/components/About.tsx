@@ -10,7 +10,6 @@ const interests = [
   { icon: "🌐", label: "Wikiracing" },
   { icon: "🧠", label: "Neural Nets" },
   { icon: "📖", label: "Storytelling" },
-  { icon: "🐳", label: "DevOps" },
 ];
 
 const awards = [
@@ -21,10 +20,10 @@ const awards = [
 ];
 
 const stats = [
-  { value: "3.91", label: "GPA" },
+  { value: "3.92", label: "GPA" },
   { value: "5+", label: "Internships & Roles" },
   { value: "4+", label: "Projects Shipped" },
-  { value: "Dec '26", label: "Graduation" },
+  { value: "May '27", label: "Graduation" },
 ];
 
 function useInView(threshold = 0.15) {
@@ -84,13 +83,13 @@ export default function About() {
                 </p>
               </div>
               <span className="ml-2 text-xs font-mono text-[#FFCB05] bg-[#FFCB05]/10 px-2 py-0.5 rounded">
-                3.91 GPA
+                3.92 GPA
               </span>
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-5">
               I&apos;m a computer science student at the University of Michigan College of Engineering,
-              expected to graduate in December 2026. I care deeply about building systems that are
+              expected to graduate in May 2027. I care deeply about building systems that are
               reliable, fast, and built to scale, from distributed workflow engines to full stack
               product experiences.
             </p>
